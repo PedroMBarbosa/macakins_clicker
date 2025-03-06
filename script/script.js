@@ -52,7 +52,7 @@ function aumenta_ponto(event) {
     const y = event.clientY;
 
     const div = document.createElement('div');
-    div.innerHTML = `+${Math.round(bpc)}`+'🍌'; 
+    div.innerHTML = `+${Math.round(bpc)}`; 
     div.style.cssText = `color: black; position: absolute; top: ${y}px; left: ${x}px; font-size: 30px; pointer-events: none;`;
 
     document.body.appendChild(div); 
