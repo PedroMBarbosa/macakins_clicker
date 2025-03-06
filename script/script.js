@@ -52,21 +52,16 @@ function aumenta_ponto(event) {
     const y = event.clientY;
 
     const div = document.createElement('div');
-    div.innerHTML = `+${Math.round(bpc)}`; 
+    div.innerHTML = `+${Math.round(bpc)}🍌`; 
     div.style.cssText = `color: black; position: absolute; top: ${y}px; left: ${x}px; font-size: 30px; pointer-events: none;`;
 
-    const img = document.createElement('img');
-    img.src = '../img/banana.png'; 
-    img.style.cssText = `position: absolute; top: ${y - 30}px; left: ${x - 30}px; width: 35px; height: 35px; pointer-events: none;`;
-
-    document.body.appendChild(img); 
     document.body.appendChild(div); 
 
     img.classList.add('fade-up');
     div.classList.add('fade-up');
 
     timeout(div);
-    timeout(img);
+
 }
 
 const timeout = (div) => {
