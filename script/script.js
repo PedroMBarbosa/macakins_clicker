@@ -148,13 +148,13 @@ function compra_casca() {
 
 casca_upgrade.addEventListener('click', compra_casca);
 
-function compracacho() {
+function compra_cacho() {
     if(score >= parseInt(custo_cacho.innerHTML)){
         score -= parseInt(custo_cacho.innerHTML);
         pontuacao.innerHTML = score;
-        cacho_level.innerHTML = parseInt(cacho_level.innerHTML) * 3;
-        bpc += 1;
-        custo_cacho.innerHTML = parseInt(custo_cacho.innerHTML) + 10;
+        cacho_level.innerHTML = parseInt(cacho_level.innerHTML) + 1;
+        bpc += 30;
+        custo_cacho.innerHTML = parseInt(custo_cacho.innerHTML) + 1000;
         localStorage.setItem('bpc', bpc);
         localStorage.setItem('pontuacao', score);
         localStorage.setItem('cacho_level', cacho_level.innerHTML);
@@ -164,7 +164,7 @@ function compracacho() {
     }
 }
 
-cacho_upgrade.addEventListener('click', compracacho);
+cacho_upgrade.addEventListener('click', compra_cacho);
 
 function compra_minion() {
     if(score >= parseInt(minion_clicker.innerHTML)){
