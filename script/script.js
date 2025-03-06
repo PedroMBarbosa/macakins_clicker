@@ -57,7 +57,6 @@ function aumenta_ponto(event) {
 
     document.body.appendChild(div); 
 
-    img.classList.add('fade-up');
     div.classList.add('fade-up');
 
     timeout(div);
