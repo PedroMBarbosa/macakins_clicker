@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macakins Clicker</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="cabecario">
+        <button class="botao_loja" id="botao_loja">
+            <img src="./img/lojaicon.png">
+        </button>
+        <h1 class="titulo">Macakins Clicker</h1>
+        <button class="botao_loja" id="botao_loja2">
+            <img src="./img/lojaicon.png">
+        </button>
+    </div>
+    <div class="pontuacao">
+        <img src="./img/banana.png">
+        <span id="pontuacao">0</span>
+    </div>
+    <div class="container">
+        <div class="loja" id="loja">
+            <div class="cabecario_loja">
+                <h1>Loja: </h1>
+                <button class="encerra" id="fecha">
+                    <img src="./img/x.png">
+                </button>            
+            </div>
+
+            <div class="compra" id="clicker_upgrade">
+                <img src="./img/click.png">
+                <h2>Clicker</h2>
+                <p>Cost <span id="custo_clicker">10</span></p>
+                <h1>Level <span id="level_clicker">0</span></h1>
+            </div>
+
+            <div class="compra" id="bananas_upgrade">
+                <img src="./img/caixa_banana.png">
+                <h2>Bananas</h2>
+                <p>Cost <span id="custo_bananas">130</span></p>
+                <h1>Level <span id="level_bananas">0</span></h1>
+            </div>
+
+            <div class="compra" id="bananeira_upgrade">
+                <img src="./img/bananeira.png">
+                <h2>Bananeira</h2>
+                <p>Cost <span id="custo_bananeira">850</span></p>
+                <h1>Level <span id="level_bananeira">0</span></h1>
+            </div>
+        </div>
+        <img src="./img/macaco.png" class="macaco" id="macaco" draggable="false">
+        <div class="text_info">
+            <p>BPC: <span id="bpc_text">1</span> (bananas por click)</p>
+            <p>BPS: <span id="bps_text">0</span> (bananas por segundo)</p>
+        </div>
+        <div class="loja2" id="loja2">
+            <div class="cabecario_loja">
+                <h1>Loja: </h1>
+                <button class="encerra" id="fecha2">
+                    <img src="./img/x.png">
+                </button>            
+            </div>
+
+            <div class="compra" id="casca_upgrade">
+                <img src="./img/casca_banana.png">
+                <h2>Clicker </h2>
+                <p>Cost <span id="custo_casca">1000</span></p>
+                <h1>Level <span id="level_casca">0</span></h1>
+            </div>
+
+            <div class="compra" id="cacho_upgrade">
+                <img src="./img/cacho.png">
+                <h2>Cacho </h2>
+                <p>Cost <span id="custo_cacho">1200</span></p>
+                <h1>Level <span id="level_cacho">0</span></h1>
+            </div>
+
+            <div class="compra" id="minion_upgrade">
+                <img src="./img/minion.png">
+                <h2>Minion </h2>
+                <p>Cost <span id="custo_minion">9999999999999</span></p>
+                <h1>Level <span id="level_minion">0</span></h1>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
